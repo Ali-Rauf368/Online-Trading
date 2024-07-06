@@ -24,7 +24,7 @@ function moveSlide(step) {
 function startSlideShow() {
     slideInterval = setInterval(() => {
         moveSlide(1);
-    }, 3000); // Change slide every 3 seconds
+    }, 3000); 
 }
 
 function stopSlideShow() {
@@ -34,15 +34,15 @@ function stopSlideShow() {
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('prev').addEventListener('click', () => {
         moveSlide(-1);
-        stopSlideShow(); // Stop slideshow on manual control
-        startSlideShow(); // Restart slideshow after manual control
+        stopSlideShow(); 
+        startSlideShow();
     });
     document.getElementById('next').addEventListener('click', () => {
         moveSlide(1);
-        stopSlideShow(); // Stop slideshow on manual control
-        startSlideShow(); // Restart slideshow after manual control
+        stopSlideShow(); 
+        startSlideShow(); 
     });
 
     showSlide(currentSlide);
-    startSlideShow(); // Start the automatic slideshow
+    startSlideShow(); 
 });
