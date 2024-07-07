@@ -202,17 +202,8 @@ main {
     background-color: #555;
 }
 
-/* Full Width Image Section */
-.full-width-image {
-    width: 100vw;
-    overflow: hidden;
-}
 
-.full-width-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+
 
 .info-section {
     background-image: url('images/image\ copy\ 4.png');
@@ -222,6 +213,7 @@ main {
     padding: 50px 0;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
 }
 
 .info-content {
